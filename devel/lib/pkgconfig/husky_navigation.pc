@@ -1,4 +1,4 @@
-prefix=/home/vivek/husky/devel
+prefix=/home/vivek/husky_ws/devel
 
 Name: husky_navigation
 Description: Description of husky_navigation

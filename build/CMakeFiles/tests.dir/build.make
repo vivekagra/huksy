@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vivek/husky/src
+CMAKE_SOURCE_DIR = /home/vivek/husky_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vivek/husky/build
+CMAKE_BINARY_DIR = /home/vivek/husky_ws/build
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/vivek/husky/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vivek/husky/src /home/vivek/husky/src /home/vivek/husky/build /home/vivek/husky/build /home/vivek/husky/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vivek/husky_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vivek/husky_ws/src /home/vivek/husky_ws/src /home/vivek/husky_ws/build /home/vivek/husky_ws/build /home/vivek/husky_ws/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 
