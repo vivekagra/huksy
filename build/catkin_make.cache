@@ -1,2 +1,2 @@
-husky_base:husky_bringup:husky_control:husky_description:husky_desktop:husky_gazebo:husky_msgs:husky_navigation:husky_robot:husky_simulator:husky_viz
+husky_base:husky_bringup:husky_control:husky_description:husky_desktop:husky_gazebo:husky_msgs:husky_navigation:husky_robot:husky_simulator:husky_viz:pocketsphinx:ros-tutorial-voice
 -DCATKIN_DEVEL_PREFIX=/home/vivek/husky_ws/devel -DCMAKE_INSTALL_PREFIX=/home/vivek/husky_ws/install -G Unix Makefiles
