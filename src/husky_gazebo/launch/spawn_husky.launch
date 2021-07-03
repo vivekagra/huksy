@@ -39,7 +39,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <arg name="urdf_extras" default="$(optenv HUSKY_URDF_EXTRAS)"/>
 
   <!-- Optionally disable teleop control -->
-  <arg name="joystick" default="true" />
+  <arg name="joystick" default="false" />
 
   <group ns="$(arg robot_namespace)">
 

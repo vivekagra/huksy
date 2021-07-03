@@ -2,9 +2,11 @@
 <launch>
 
   <arg name="joy_dev" default="$(optenv HUSKY_JOY_DEVICE /dev/input/js0)" />
-  <arg name="joystick" default="true" />
+  <arg name="joystick" default="false" />
 
-  <group ns="joy_teleop">
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop" output="screen"/>
+
+  <!-- <group ns="joy_teleop">
 
     <group unless="$(optenv HUSKY_LOGITECH 0)" >
       <rosparam command="load" file="$(find husky_control)/config/teleop_ps4.yaml" />
@@ -18,6 +20,6 @@
     <node pkg="joy" type="joy_node" name="joy_node" />
 
     <node pkg="teleop_twist_joy" type="teleop_node" name="teleop_twist_joy"/>
-  </group>
+  </group> -->
 
 </launch>

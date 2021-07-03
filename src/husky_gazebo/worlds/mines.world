@@ -1,0 +1,435 @@
+<?xml version="1.0" ?>
+<sdf version='1.7'>
+  <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>65535</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <model name='edgarMine'>
+      <static>1</static>
+      <link name='link'>
+        <pose>120 0 0.5 1.57 -0 -1.93</pose>
+        <collision name='starting_area_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_StartingArea.DAE</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='starting_area_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_StartingArea.DAE</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='section_01_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_01.DAE</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='section_01_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_01.DAE</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='section_02_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_02.DAE</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='section_02_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_02.DAE</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='section_03_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_03.DAE</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='section_03_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_03.DAE</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='section_04_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_04.DAE</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='section_04_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_04.DAE</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='section_05_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_05.DAE</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='section_05_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_05.DAE</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='section_06_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_06.DAE</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='section_06_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_06.DAE</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='section_07_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_07.DAE</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='section_07_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_07.DAE</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='section_08_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_08.DAE</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='section_08_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_08.DAE</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='section_09_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_09.DAE</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='section_09_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_09.DAE</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='section_10_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_10.DAE</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='section_10_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://edgarMine/meshes/Edgar_Section_10.DAE</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-2.21565 -0.680646 0 0 -0 0</pose>
+    </model>
+    <state world_name='default'>
+      <sim_time>729 416000000</sim_time>
+      <real_time>751 240981865</real_time>
+      <wall_time>1625296571 214336405</wall_time>
+      <iterations>729416</iterations>
+      <model name='edgarMine'>
+        <pose>-2.21565 -0.680646 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>117.784 -0.680646 0.5 1.57 -0 -1.93</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-274.513 -15.736 414.218 0 1.0338 -0.172004</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+  </world>
+</sdf>

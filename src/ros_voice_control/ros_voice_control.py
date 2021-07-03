@@ -72,12 +72,12 @@ class ASRControl(object):
             self.decoder.end_utt()
             self.decoder.start_utt()
             # you may want to modify the main logic here
-            if seg.word.find("full speed") > -1:
+            if seg.word.find("FULL SPEED") > -1:
                 if self.speed == 0.2:
                     self.msg.linear.x = self.msg.linear.x*2
                     self.msg.angular.z = self.msg.angular.z*2
                     self.speed = 0.4
-            if seg.word.find("half speed") > -1:
+            if seg.word.find("HALF SPEED") > -1:
                 if self.speed == 0.4:
                     self.msg.linear.x = self.msg.linear.x/2
                     self.msg.angular.z = self.msg.angular.z/2
@@ -100,7 +100,7 @@ class ASRControl(object):
             elif seg.word.find("BACK") > -1:
                 self.msg.linear.x = -self.speed
                 self.msg.angular.z = 0
-            elif seg.word.find("STOP") > -1 or seg.word.find("halt") > -1:
+            elif seg.word.find("STOP") > -1 or seg.word.find("HALT") > -1:
                 self.msg = Twist()
 
         self.pub_.publish(self.msg)
