@@ -14,6 +14,7 @@
   <arg name="laser_enabled" default="$(optenv HUSKY_LMS1XX_ENABLED false)"/>
   <arg name="realsense_enabled" default="$(optenv HUSKY_REALSENSE_ENABLED false)"/>
   <arg name="urdf_extras" default="$(optenv HUSKY_URDF_EXTRAS)"/>
+  <arg name="ur5_enabled" default="$(optenv HUSKY_UR5_ENABLED false)"/>
 
   <!-- Optionally disable teleop control -->
   <arg name="joystick" default="false" />
@@ -25,6 +26,7 @@
         <arg name="robot_namespace" value="$(arg robot_namespace)"/>
         <arg name="laser_enabled" default="$(arg laser_enabled)"/>
         <arg name="realsense_enabled" default="$(arg realsense_enabled)"/>
+        <arg name="ur5_enabled" default="$(arg ur5_enabled)"/>
         <arg name="urdf_extras" default="$(arg urdf_extras)"/>
       </include>
 
@@ -44,6 +46,7 @@
         <arg name="multimaster" value="$(arg multimaster)"/>
         <arg name="laser_enabled" value="$(arg laser_enabled)"/>
         <arg name="realsense_enabled" default="$(arg realsense_enabled)"/>
+        <arg name="ur5_enabled" default="$(arg ur5_enabled)"/>
         <arg name="urdf_extras" value="$(arg urdf_extras)"/>
       </include>
       <include file="$(find husky_control)/launch/teleop.launch">

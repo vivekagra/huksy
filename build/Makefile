@@ -1104,6 +1104,97 @@ _run_tests_husky_navigation_roslaunch-check_launch/fast:
 .PHONY : _run_tests_husky_navigation_roslaunch-check_launch/fast
 
 #=============================================================================
+# Target rules for targets named run_tests_husky_ur5_moveit_config
+
+# Build rule for target.
+run_tests_husky_ur5_moveit_config: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_husky_ur5_moveit_config
+.PHONY : run_tests_husky_ur5_moveit_config
+
+# fast build rule for target.
+run_tests_husky_ur5_moveit_config/fast:
+	$(MAKE) -f husky_ur5_moveit_config/CMakeFiles/run_tests_husky_ur5_moveit_config.dir/build.make husky_ur5_moveit_config/CMakeFiles/run_tests_husky_ur5_moveit_config.dir/build
+.PHONY : run_tests_husky_ur5_moveit_config/fast
+
+#=============================================================================
+# Target rules for targets named clean_test_results_husky_ur5_moveit_config
+
+# Build rule for target.
+clean_test_results_husky_ur5_moveit_config: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_husky_ur5_moveit_config
+.PHONY : clean_test_results_husky_ur5_moveit_config
+
+# fast build rule for target.
+clean_test_results_husky_ur5_moveit_config/fast:
+	$(MAKE) -f husky_ur5_moveit_config/CMakeFiles/clean_test_results_husky_ur5_moveit_config.dir/build.make husky_ur5_moveit_config/CMakeFiles/clean_test_results_husky_ur5_moveit_config.dir/build
+.PHONY : clean_test_results_husky_ur5_moveit_config/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_husky_ur5_moveit_config
+
+# Build rule for target.
+_run_tests_husky_ur5_moveit_config: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_husky_ur5_moveit_config
+.PHONY : _run_tests_husky_ur5_moveit_config
+
+# fast build rule for target.
+_run_tests_husky_ur5_moveit_config/fast:
+	$(MAKE) -f husky_ur5_moveit_config/CMakeFiles/_run_tests_husky_ur5_moveit_config.dir/build.make husky_ur5_moveit_config/CMakeFiles/_run_tests_husky_ur5_moveit_config.dir/build
+.PHONY : _run_tests_husky_ur5_moveit_config/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_husky_ur5_moveit_config_roslaunch-check_launch
+
+# Build rule for target.
+run_tests_husky_ur5_moveit_config_roslaunch-check_launch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_husky_ur5_moveit_config_roslaunch-check_launch
+.PHONY : run_tests_husky_ur5_moveit_config_roslaunch-check_launch
+
+# fast build rule for target.
+run_tests_husky_ur5_moveit_config_roslaunch-check_launch/fast:
+	$(MAKE) -f husky_ur5_moveit_config/CMakeFiles/run_tests_husky_ur5_moveit_config_roslaunch-check_launch.dir/build.make husky_ur5_moveit_config/CMakeFiles/run_tests_husky_ur5_moveit_config_roslaunch-check_launch.dir/build
+.PHONY : run_tests_husky_ur5_moveit_config_roslaunch-check_launch/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_husky_ur5_moveit_config_roslaunch-check
+
+# Build rule for target.
+run_tests_husky_ur5_moveit_config_roslaunch-check: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_husky_ur5_moveit_config_roslaunch-check
+.PHONY : run_tests_husky_ur5_moveit_config_roslaunch-check
+
+# fast build rule for target.
+run_tests_husky_ur5_moveit_config_roslaunch-check/fast:
+	$(MAKE) -f husky_ur5_moveit_config/CMakeFiles/run_tests_husky_ur5_moveit_config_roslaunch-check.dir/build.make husky_ur5_moveit_config/CMakeFiles/run_tests_husky_ur5_moveit_config_roslaunch-check.dir/build
+.PHONY : run_tests_husky_ur5_moveit_config_roslaunch-check/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_husky_ur5_moveit_config_roslaunch-check
+
+# Build rule for target.
+_run_tests_husky_ur5_moveit_config_roslaunch-check: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_husky_ur5_moveit_config_roslaunch-check
+.PHONY : _run_tests_husky_ur5_moveit_config_roslaunch-check
+
+# fast build rule for target.
+_run_tests_husky_ur5_moveit_config_roslaunch-check/fast:
+	$(MAKE) -f husky_ur5_moveit_config/CMakeFiles/_run_tests_husky_ur5_moveit_config_roslaunch-check.dir/build.make husky_ur5_moveit_config/CMakeFiles/_run_tests_husky_ur5_moveit_config_roslaunch-check.dir/build
+.PHONY : _run_tests_husky_ur5_moveit_config_roslaunch-check/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_husky_ur5_moveit_config_roslaunch-check_launch
+
+# Build rule for target.
+_run_tests_husky_ur5_moveit_config_roslaunch-check_launch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_husky_ur5_moveit_config_roslaunch-check_launch
+.PHONY : _run_tests_husky_ur5_moveit_config_roslaunch-check_launch
+
+# fast build rule for target.
+_run_tests_husky_ur5_moveit_config_roslaunch-check_launch/fast:
+	$(MAKE) -f husky_ur5_moveit_config/CMakeFiles/_run_tests_husky_ur5_moveit_config_roslaunch-check_launch.dir/build.make husky_ur5_moveit_config/CMakeFiles/_run_tests_husky_ur5_moveit_config_roslaunch-check_launch.dir/build
+.PHONY : _run_tests_husky_ur5_moveit_config_roslaunch-check_launch/fast
+
+#=============================================================================
 # Target rules for targets named clean_test_results_husky_viz
 
 # Build rule for target.
@@ -1682,6 +1773,13 @@ help:
 	@echo "... clean_test_results_husky_navigation"
 	@echo "... _run_tests_husky_navigation"
 	@echo "... _run_tests_husky_navigation_roslaunch-check_launch"
+	@echo "... run_tests_husky_ur5_moveit_config"
+	@echo "... clean_test_results_husky_ur5_moveit_config"
+	@echo "... _run_tests_husky_ur5_moveit_config"
+	@echo "... run_tests_husky_ur5_moveit_config_roslaunch-check_launch"
+	@echo "... run_tests_husky_ur5_moveit_config_roslaunch-check"
+	@echo "... _run_tests_husky_ur5_moveit_config_roslaunch-check"
+	@echo "... _run_tests_husky_ur5_moveit_config_roslaunch-check_launch"
 	@echo "... clean_test_results_husky_viz"
 	@echo "... _run_tests_husky_viz"
 	@echo "... run_tests_husky_viz_roslaunch-check"
